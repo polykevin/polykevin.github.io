@@ -1,0 +1,130 @@
+@font-face {
+    font-family: Arial, Helvetica, sans-serif;
+    src: url();
+}
+#zamn{
+    text-align: center;
+    color: rgb(43, 46, 226);
+}
+body{
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+#uwu {
+    text-align: center;
+    color: rgb(249, 224, 118);
+    user-select: none;
+}
+
+#clicker:active{
+    background-color: rgb(255, 246, 208);
+}
+
+#clicker{
+    background-color: transparent;
+    border: transparent;
+    text-align: center;
+    position: absolute;
+    user-select: none;
+    right: 41%;
+    width: 250px;
+    height: 450px;
+}
+
+#rotule{
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 500px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+
+br{
+    user-select: none;
+}
+
+#button_texte{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    padding-left: 58;
+}
+
+#button_nb{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 3  00;
+    margin-top: 50;
+    margin-left: 90;
+    display: flex;
+    position: relative;
+}
+
+#button_prix{
+    color:rgb(255, 255, 255);
+    position: relative;
+    display: flex;
+    margin-top: -60;
+    margin-left: 90;
+    font-size: 17px;
+    font-weight: 200;
+}
+
+button:hover{
+    background: rgb(31, 34, 199);
+}
+
+button:active{
+    background: rgb(14, 16, 141);
+}
+
+button {
+    background-color: rgb(43, 46, 226);
+    border: transparent;
+    color: rgb(255, 255, 255);
+    user-select: none;  
+    margin-bottom: 20;
+    width: 250px;
+    height: 100px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0;
+    position: relative;
+}
+
+div{
+    color: rgb(43, 46, 226);
+}
+
+#reset{
+    position: absolute;
+    display: initial;
+    text-align: center;
+    top: 95%;
+    right: 1%;
+    width: 50px;
+    height: 20px;
+}
+
+#cout {
+    width: 15px;
+    position: relative;
+    padding-left: 5;
+    height: 20px;
+    display: flex;
+}
+
+.megachevalier {
+    width: 70px;
+    position: relative;
+    display: flex;
+    margin-top: -50;
+    margin-left: 10;
+    height: 80px;
+}
