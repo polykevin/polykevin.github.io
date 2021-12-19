@@ -37,6 +37,7 @@ body{
     width: 300px;
     height: 500px;
     overflow-x: hidden;
+    position: absolute;
     overflow-y: active;
     text-align: center;
     padding: 20px;
@@ -46,7 +47,7 @@ body{
     background-color: transparent;
     width: 300px;
     height: 500px;
-    position: fixed;
+    position: absolute;
     overflow-x: hidden;
     overflow-y: active;
     text-align: center;
