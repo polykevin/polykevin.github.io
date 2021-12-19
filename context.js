@@ -166,7 +166,7 @@ function clique2(truc) {
   if (projekt.mechant[truc].cout <= projekt.argent) {
     projekt.argent -= projekt.mechant[truc].cout;
     projekt.mechant[truc].nb++;
-    projekt.mechant[truc].cout += Math.round(projekt.mechant[truc].cout * 0.15);
+    projekt.mechant[truc].cout += Math.round(projekt.mechant[truc].cout * 2.15);
     damn_daniel();
   }
 }
@@ -266,4 +266,5 @@ function autoclicker () {
   }
 
   projekt.argent += projekt.clike;
+  projekt.clike = 1;
 }
