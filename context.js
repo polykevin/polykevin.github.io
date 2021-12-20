@@ -188,7 +188,7 @@ function damn_daniel() {
     ).innerHTML += `<br> <button onclick="clique2('${i}')"> <div class = "mp"><span class="button_texte">${projekt.mechant[i].nom}</span> <span class="button_nb">${numberformat.format(projekt.mechant[i].nb)}</span> <span class="button_prix">${numberformat.format(projekt.mechant[i].cout)} <img src="argent.png" class = "cout" /></span>  <span><img src="iop/${stilo}_ouah.jpg" id = "gobelin" /></span></div></button>`;
       stilo++;
   }
-
+  aps = 0;
   for( i in projekt.rotule) {
     aps += projekt.rotule[i].money * projekt.rotule[i].nb;
 
