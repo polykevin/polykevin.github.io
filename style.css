@@ -15,6 +15,12 @@ body{
 
 #uwu {
     text-align: center;
+    margin-bottom: -22px;
+    color: rgb(249, 224, 118);
+    user-select: none;
+}
+#owo {
+    text-align: center;
     color: rgb(249, 224, 118);
     user-select: none;
 }

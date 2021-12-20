@@ -222,7 +222,7 @@ function jour() {
     lastsavedate = Math.round(lastsavedate / 1000);
     if (lastsavedate / 60 >= 1) {
       projekt.argent += lastsavedate * aps / 1.8;
-      alert(numberformat.format(lastsavedate * aps / 1.8) + "$");
+      alert("Vous avez fais " + numberformat.format(lastsavedate * aps / 1.8) + " $ " + "Pendant votre absence");
     }
   }
 
@@ -230,7 +230,12 @@ function jour() {
     for (i in projekt.rotule) {
       projekt.argent += (projekt.rotule[i].nb * projekt.rotule[i].money) / 20;
     }
-
+    if (aps < 100000) {
+    document.querySelector("#owo").innerHTML = aps + " $/Sec"; 
+  }
+    else {
+    document.querySelector("#owo").innerHTML = numberformat.format(aps) + " $/Sec"; 
+    }
     document.querySelector("#uwu").innerHTML = numberformat.format(Number(String(projekt.argent).split(".")[0])) + " $";
     delai++;
     if (delai >= 40) {
@@ -246,6 +251,9 @@ function jour() {
 function reset() {
   Cookies.remove("projekt");
   projekt.argent = 0;
+  projekt.clike = 1;
+  aps = 0;
+  document.querySelector("#owo").innerHTML = aps + " $/Sec";
   for (i in projekt.rotule) {
     projekt.rotule[i].nb = 0;
     projekt.rotule[i].cout = projekt.rotule[i].original;
