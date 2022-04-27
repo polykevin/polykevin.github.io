@@ -1,0 +1,23 @@
+body {
+    background-color: #2b2d42;
+}
+
+h1 {
+    color: #8d99ae;
+    text-align: center;
+}
+div{
+    display: flex;
+    justify-content: center;
+}
+button {
+ background-color: #8d99ae;
+ border: #edf2f4;
+ border-radius: 5%;
+ width: 150px;
+ height: 70px;
+ display: inline-block;
+ cursor: pointer;
+ margin-left: 10px;
+}
+
