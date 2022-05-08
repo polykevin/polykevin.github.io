@@ -37,7 +37,7 @@ body {
   margin: 0;
 }
 
-canvas {
+#canvas {
   border: 2px solid rgb(246, 114, 128);
   background-color: white;
 }
