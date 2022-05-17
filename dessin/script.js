@@ -31,7 +31,7 @@ ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 function bouttonAppuyer(i) {
   if (i == 1) {
-    document.getElementById("crayon").style.borderWidth = "4px";
+    document.getElementById("crayon").style.borderWidth = "5px";
     document.getElementById("gomme").style.borderWidth = "0px";
     document.getElementById("ligne").style.borderWidth = "0px";
     document.getElementById("cercle").style.borderWidth = "0px";
@@ -41,7 +41,7 @@ function bouttonAppuyer(i) {
   }
   if (i == 2) {
     document.getElementById("crayon").style.borderWidth = "0px";
-    document.getElementById("gomme").style.borderWidth = "4px";
+    document.getElementById("gomme").style.borderWidth = "5px";
     document.getElementById("ligne").style.borderWidth = "0px";
     document.getElementById("cercle").style.borderWidth = "0px";
     document.getElementById("polygone").style.borderWidth = "0px";
@@ -51,7 +51,7 @@ function bouttonAppuyer(i) {
   if (i == 3) {
     document.getElementById("crayon").style.borderWidth = "0px";
     document.getElementById("gomme").style.borderWidth = "0px";
-    document.getElementById("ligne").style.borderWidth = "4px";
+    document.getElementById("ligne").style.borderWidth = "5px";
     document.getElementById("cercle").style.borderWidth = "0px";
     document.getElementById("polygone").style.borderWidth = "0px";
     document.getElementById("rectangle").style.borderWidth = "0px";
@@ -61,7 +61,7 @@ function bouttonAppuyer(i) {
     document.getElementById("crayon").style.borderWidth = "0px";
     document.getElementById("gomme").style.borderWidth = "0px";
     document.getElementById("ligne").style.borderWidth = "0px";
-    document.getElementById("cercle").style.borderWidth = "4px";
+    document.getElementById("cercle").style.borderWidth = "5px";
     document.getElementById("polygone").style.borderWidth = "0px";
     document.getElementById("rectangle").style.borderWidth = "0px";
     document.getElementById("filledRectangle").style.borderWidth = "0px";
@@ -71,7 +71,7 @@ function bouttonAppuyer(i) {
     document.getElementById("gomme").style.borderWidth = "0px";
     document.getElementById("ligne").style.borderWidth = "0px";
     document.getElementById("cercle").style.borderWidth = "0px";
-    document.getElementById("polygone").style.borderWidth = "4px";
+    document.getElementById("polygone").style.borderWidth = "5px";
     document.getElementById("rectangle").style.borderWidth = "0px";
     document.getElementById("filledRectangle").style.borderWidth = "0px";
   }
@@ -81,7 +81,7 @@ function bouttonAppuyer(i) {
     document.getElementById("ligne").style.borderWidth = "0px";
     document.getElementById("cercle").style.borderWidth = "0px";
     document.getElementById("polygone").style.borderWidth = "0px";
-    document.getElementById("rectangle").style.borderWidth = "4px";
+    document.getElementById("rectangle").style.borderWidth = "5px";
     document.getElementById("filledRectangle").style.borderWidth = "0px";
   }
   if (i == 7) {
@@ -91,7 +91,7 @@ function bouttonAppuyer(i) {
     document.getElementById("cercle").style.borderWidth = "0px";
     document.getElementById("polygone").style.borderWidth = "0px";
     document.getElementById("rectangle").style.borderWidth = "0px";
-    document.getElementById("filledRectangle").style.borderWidth = "4px";
+    document.getElementById("filledRectangle").style.borderWidth = "5px";
   }
 }
 

@@ -99,7 +99,6 @@ body {
 
 button:hover{
   background-color: #2b2d42;
-
 }
 
 input:hover{
@@ -122,6 +121,30 @@ input:active{
 #blanc{
   width: 80%;
 
+}
+
+#jaune {
+  width: 70%;
+}
+
+.aboube {
+  margin: 0;
+  display: flex;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 4px;
+  left: 4px;
+}
+
+#retourner {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #8d99ae;
+}
+
+#retourner:hover {
+  background-color: #8d99ae;
 }
 
 #crayon {
