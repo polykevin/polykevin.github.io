@@ -11,11 +11,10 @@ var ligneBtn = document.getElementById("ligne");
 var polygoneBtn = document.getElementById("polygone");
 var rectangleBtn = document.getElementById("rectangle");
 var filledRectangleBtn = document.getElementById("filledRectangle");
+var sceauBtn = document.getElementById("sceau");
 var saveBtn = document.getElementById("save");
 
-
 var ctx = canvas.getContext("2d");
-
 
 let taille = 0;
 let appuyer = false;
@@ -26,8 +25,10 @@ let y;
 let x2;
 let y2;
 var stop = 0;
+var rect;
 ctx.fillStyle = "white";
 ctx.fillRect(0, 0, canvas.width, canvas.height);
+rect = canvas.getBoundingClientRect();
 
 function bouttonAppuyer(i) {
   if (i == 1) {
@@ -37,6 +38,7 @@ function bouttonAppuyer(i) {
     document.getElementById("cercle").style.borderWidth = "0px";
     document.getElementById("polygone").style.borderWidth = "0px";
     document.getElementById("rectangle").style.borderWidth = "0px";
+    document.getElementById("sceau").style.borderWidth = "0px";
     document.getElementById("filledRectangle").style.borderWidth = "0px";
   }
   if (i == 2) {
@@ -46,6 +48,7 @@ function bouttonAppuyer(i) {
     document.getElementById("cercle").style.borderWidth = "0px";
     document.getElementById("polygone").style.borderWidth = "0px";
     document.getElementById("rectangle").style.borderWidth = "0px";
+    document.getElementById("sceau").style.borderWidth = "0px";
     document.getElementById("filledRectangle").style.borderWidth = "0px";
   }
   if (i == 3) {
@@ -55,6 +58,7 @@ function bouttonAppuyer(i) {
     document.getElementById("cercle").style.borderWidth = "0px";
     document.getElementById("polygone").style.borderWidth = "0px";
     document.getElementById("rectangle").style.borderWidth = "0px";
+    document.getElementById("sceau").style.borderWidth = "0px";
     document.getElementById("filledRectangle").style.borderWidth = "0px";
   }
   if (i == 4) {
@@ -64,6 +68,7 @@ function bouttonAppuyer(i) {
     document.getElementById("cercle").style.borderWidth = "5px";
     document.getElementById("polygone").style.borderWidth = "0px";
     document.getElementById("rectangle").style.borderWidth = "0px";
+    document.getElementById("sceau").style.borderWidth = "0px";
     document.getElementById("filledRectangle").style.borderWidth = "0px";
   }
   if (i == 5) {
@@ -73,6 +78,7 @@ function bouttonAppuyer(i) {
     document.getElementById("cercle").style.borderWidth = "0px";
     document.getElementById("polygone").style.borderWidth = "5px";
     document.getElementById("rectangle").style.borderWidth = "0px";
+    document.getElementById("sceau").style.borderWidth = "0px";
     document.getElementById("filledRectangle").style.borderWidth = "0px";
   }
   if (i == 6) {
@@ -83,6 +89,7 @@ function bouttonAppuyer(i) {
     document.getElementById("polygone").style.borderWidth = "0px";
     document.getElementById("rectangle").style.borderWidth = "5px";
     document.getElementById("filledRectangle").style.borderWidth = "0px";
+    document.getElementById("sceau").style.borderWidth = "0px";
   }
   if (i == 7) {
     document.getElementById("crayon").style.borderWidth = "0px";
@@ -92,6 +99,17 @@ function bouttonAppuyer(i) {
     document.getElementById("polygone").style.borderWidth = "0px";
     document.getElementById("rectangle").style.borderWidth = "0px";
     document.getElementById("filledRectangle").style.borderWidth = "5px";
+    document.getElementById("sceau").style.borderWidth = "0px";
+  }
+  if (i == 8) {
+    document.getElementById("crayon").style.borderWidth = "0px";
+    document.getElementById("gomme").style.borderWidth = "0px";
+    document.getElementById("ligne").style.borderWidth = "0px";
+    document.getElementById("cercle").style.borderWidth = "0px";
+    document.getElementById("polygone").style.borderWidth = "0px";
+    document.getElementById("rectangle").style.borderWidth = "0px";
+    document.getElementById("filledRectangle").style.borderWidth = "0px";
+    document.getElementById("sceau").style.borderWidth = "5px";
   }
 }
 
@@ -100,51 +118,66 @@ function crayon() {
   if (color == "white") {
     color = "black";
   }
- /* detecter si la souris est appuyé */
- canvas.addEventListener("mousedown", tar);
+  /* detecter si la souris est appuyé */
+  canvas.addEventListener("mousedown", tar);
 
- function tar(e) {
-   if (stop != 1) {
-     canvas.removeEventListener("mousedown", tar);
-   } else {
-     appuyer = true;
+  function tar(e) {
+    if (stop != 1) {
+      canvas.removeEventListener("mousedown", tar);
+    } else {
+      appuyer = true;
 
-     x = e.offsetX;
-     y = e.offsetY;
-   }
- }
- /* detecter si la souris est relaché */
- canvas.addEventListener("mouseup", jop);
+      x = e.offsetX;
+      y = e.offsetY;
+    }
+  }
+  /* detecter si la souris est relaché */
+  canvas.addEventListener("mouseup", jop);
 
- function jop(e) {
-   if (stop != 1) {
-     canvas.removeEventListener("mouseup", jop);
-   } else {
-     appuyer = false;
+  function jop(e) {
+    if (stop != 1) {
+      canvas.removeEventListener("mouseup", jop);
+    } else {
+      appuyer = false;
 
-     x = undefined;
-     y = undefined;
-   }
- }
- /* detecter si la souris est en mouvement */
- canvas.addEventListener("mousemove", drawing);
+      x = undefined;
+      y = undefined;
+    }
+  }
+  /* detecter si la souris est en mouvement */
+  canvas.addEventListener("mousemove", drawing);
 
- function drawing(e) {
-   if (stop != 1) {
-     canvas.removeEventListener("mousemove", drawing);
-   } else {
-     if (appuyer) {
-       const x2 = e.offsetX;
-       const y2 = e.offsetY;
+  function drawing(e) {
+    if (stop != 1) {
+      canvas.removeEventListener("mousemove", drawing);
+    } else {
+      if (appuyer) {
+        const x2 = e.offsetX;
+        const y2 = e.offsetY;
 
-       dessineCercle(x2, y2);
-       dessineLigne(x, y, x2, y2);
+        dessineCercle(x2, y2);
+        dessineLigne(x, y, x2, y2);
 
-       x = x2;
-       y = y2;
-     }
-   }
- }
+        x = x2;
+        y = y2;
+      }
+    }
+  }
+}
+
+function sceau() {
+  stop = 6;
+  window.addEventListener("mousedown",remplir)
+  function remplir(e) {
+    if (stop != 6) {
+      canvas.removeEventListener("mousedown", remplir);
+    } else {
+      x = e.clientX;
+      y = e.clientY;
+      ctx.fillStyle = color;
+      ctx.fillFlood(e.clientX - rect.left, e.clientY - rect.top, 24);
+    }
+  }
 }
 
 saveBtn.addEventListener("click", () => {
@@ -358,13 +391,65 @@ function filledRectangle() {
 function cercle() {
   stop = 5;
 
-  window.addEventListener("click", debutCercle);
+  canvas.addEventListener("mousedown", debutCercle);
 
   function debutCercle(e) {
     if (stop != 5) {
-      canvas.removeEventListener("click", debutCercle);
+      canvas.removeEventListener("mousedown", debutCercle);
     } else {
       dessineCercle(e.offsetX, e.offsetY);
+    }
+  }
+}
+
+function gomme() {
+  stop = 7;
+  if (color != "white") {
+    color = "white";
+  }
+  /* detecter si la souris est appuyé */
+  canvas.addEventListener("mousedown", tar);
+
+  function tar(e) {
+    if (stop != 7) {
+      canvas.removeEventListener("mousedown", tar);
+    } else {
+      appuyer = true;
+
+      x = e.offsetX;
+      y = e.offsetY;
+    }
+  }
+  /* detecter si la souris est relaché */
+  canvas.addEventListener("mouseup", jop);
+
+  function jop(e) {
+    if (stop != 7) {
+      canvas.removeEventListener("mouseup", jop);
+    } else {
+      appuyer = false;
+
+      x = undefined;
+      y = undefined;
+    }
+  }
+  /* detecter si la souris est en mouvement */
+  canvas.addEventListener("mousemove", drawing);
+
+  function drawing(e) {
+    if (stop != 7) {
+      canvas.removeEventListener("mousemove", drawing);
+    } else {
+      if (appuyer) {
+        const x2 = e.offsetX;
+        const y2 = e.offsetY;
+
+        dessineCercle(x2, y2);
+        dessineLigne(x, y, x2, y2);
+
+        x = x2;
+        y = y2;
+      }
     }
   }
 }
@@ -389,7 +474,7 @@ tailleEL.addEventListener("change", (e) => (taille = e.target.value));
 
 colorEl.addEventListener("change", (e) => (color = e.target.value));
 
-gommeBtn.addEventListener("click", () => (color = "white"));
+gommeBtn.addEventListener("click", () => gomme());
 
 ligneBtn.addEventListener("click", () => ligne());
 
@@ -402,5 +487,7 @@ polygoneBtn.addEventListener("click", () => polygone());
 rectangleBtn.addEventListener("click", () => rectangle());
 
 filledRectangleBtn.addEventListener("click", () => filledRectangle());
+
+sceauBtn.addEventListener("click", () => sceau());
 
 effacerEl.addEventListener("click", () => erase());
