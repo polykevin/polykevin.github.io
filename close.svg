@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg993"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="close.svg">
+  <title
+     id="title1052">cloes</title>
+  <defs
+     id="defs987" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="510.38744"
+     inkscape:cy="531.23871"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1046"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata990">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>cloes</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g1050"
+       style="fill:#000000"
+       transform="rotate(0.44313547,109.36126,104.69941)">
+      <rect
+         style="fill:#000000;fill-rule:evenodd;stroke-width:0.706001;paint-order:stroke fill markers"
+         id="rect995"
+         width="136.07143"
+         height="22.678572"
+         x="-80.591049"
+         y="138.90071"
+         ry="11.339286"
+         rx="0"
+         transform="rotate(-50.792797)" />
+      <rect
+         style="fill:#000000;fill-rule:evenodd;stroke-width:0.706001;paint-order:stroke fill markers"
+         id="rect995-0"
+         width="136.07143"
+         height="22.678572"
+         x="82.567276"
+         y="-26.8503"
+         ry="11.339286"
+         rx="0"
+         transform="rotate(49.632715)" />
+    </g>
+  </g>
+</svg>

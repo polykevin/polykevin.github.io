@@ -1,16 +1,44 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Projet</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<link rel="icon" type="image/png" sizes="16x16" href="logos.png">
-<link rel="stylesheet" href="stylet.css" />
-</head>
-<body>
-    <h1>Projets</h1>
-<div>
-<button type="button" onclick="location.href='clicker/index.html'" id="clicker">Clicker</button>
-<button type="button" onclick="location.href='dessin/index.html'" id="paint">Paint</button>
-</div>
-</body>
+  <head>
+    <title>Projet</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+    />
+    <link rel="icon" type="image/png" sizes="16x16" href="logos.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylet.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <a href="index.html" class="logo">Kevin <span>Poly</span></a>
+        <nav>
+          <img src="close.svg" class="close"></img>
+          <ul>
+            <li><a href="#" class="navbar">Clicker</a></li>
+            <li><a href="#" class="navbar">Paint</a></li>
+          </ul>
+        </nav>
+          <img class="menu" src="menu.svg"></img>       
+      </header>
+    </div>
+      <div><img src="untitled.png" class="hero"></div>
+    <script>
+        const menu = document.querySelector('.menu')
+        const close = document.querySelector('.close')
+        const nav = document.querySelector('nav')
+
+        menu.addEventListener('click', () => {
+            nav.classList.add('open-nav')
+        })
+        
+        close.addEventListener('click', () => {
+            nav.classList.remove('open-nav')
+        })
+    </script>
+  </body>
 </html>
