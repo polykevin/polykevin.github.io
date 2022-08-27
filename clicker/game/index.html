@@ -1,19 +1,51 @@
 <html>
-  <title>Projekt</title><!-- Titre-->
-  <link rel="stylesheet" href="style.css" /> <!--Lien vers le fichier CSS-->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-  <script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script> <!--Code de qqn pour gérer les cookies-->
-  <script src="https://cdn.jsdelivr.net/gh/erosson/swarm-numberformat@v0.1.0/dist/swarm-numberformat.min.js"></script><!--Code de qqn pour pouvoir arrondir les chiffres exemple 100000 en 100thousand-->
-  <script src="context.js"></script><!--Liens vers le fichier javascript-->
-  <body onload="jour()"><!--Lance la fonction jour au chargement du body-->
-    <h1 id="zamn">Comment gagner de l'argent facilement en seulement quelques cliques ??!!</h1><!-- Titre H1-->
-    <h1 id="uwu">0 $</h1><!-- Nombre de dollar total-->
-    <h4 id="owo">0 $/Sec</h4><!-- Nombre de dollar généré par seconde-->
-    <div id="oui"></div><!-- Div qui va contenir les bouttons d'amélioration-->
-    <button id="clicker" type="button" onclick="autoclicker()"><!--Le bouton central quand tu clique ca appelle la fonction autoclicker-->
-      <img src="argent.png"/><!-- L'image affiché sur le bouton central-->
-    </button>
-    <button id="reset" onclick="reset()">Reset</button><!-- boutton pour tout recomment quand tu clique ca apelle la fonction reset-->
-    <div id="rotule"></div><!-- Div qui va contenir les autres boutton-->
+  <head>
+    <title>Projekt</title>
+    <!-- Titre-->
+    <link rel="stylesheet" href="style.css" />
+    <!--Lien vers le fichier CSS-->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body onload="jour()">
+    <!--Lance la fonction jour au chargement du body-->
+    <h1 id="zamn">
+      Comment gagner de l'argent facilement en seulement quelques cliques ??!!
+    </h1>
+    <div>
+      <!-- Titre H1-->
+      <h1 id="uwu">0 $</h1>
+      <!-- Nombre de dollar total-->
+      <h4 id="owo">0 $/Sec</h4>
+    </div>
+    <!-- Nombre de dollar généré par seconde-->
+    <!-- Div qui va contenir les bouttons d'amélioration-->
+    <div id="Joakim">
+      <button id="clicker" type="button" onclick="autoclicker()">
+        <!--Le bouton central quand tu clique ca appelle la fonction autoclicker-->
+      </button>
+    </div>
+    <div class="Menu">
+      <button id="Passif" class="menubtn" >Passif</button>
+      <button id="Actif" class="menubtn" >Actif</button>
+      <button id="Reset" class="menubtn" onclick="reset()">Reset</button>
+    <!-- boutton pour tout recomment quand tu clique ca apelle la fonction reset-->
+    <div id="rotule" class="open-menu"></div>
+    <div id="oui"></div>
+    </div>
+    <script src="context.js"></script>
+    <!--Liens vers le fichier javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
+    <!--Code de qqn pour gérer les cookies-->
+    <script src="https://cdn.jsdelivr.net/gh/erosson/swarm-numberformat@v0.1.0/dist/swarm-numberformat.min.js"></script>
+    <!--Code de qqn pour pouvoir arrondir les chiffres exemple 100000 en 100thousand-->
   </body>
 </html>

@@ -46,45 +46,51 @@ header {
 }
 
 .hero-img {
-position: absolute;
-    top: 0;
-    left: 0;
-    background: url("HeroImage.png"); 
-    background-size: cover;
-    background-position-x: 50%;
-    background-position-y: 20%;
-    width: 100%;
-    height: 100vh;
-    z-index: -1;
-    animation: introLoad 2s forwards;
-    overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("HeroImage.png");
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 20%;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  animation: introLoad 2s forwards;
+  overflow: hidden;
 }
 
 h1 {
-    font-size: 2rem;
-    margin-top: 0.5em;
-    line-height: 3.3rem;
+  font-size: 2rem;
+  margin-top: 0.5em;
+  line-height: 3.3rem;
 }
 
 .subhead {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 section.hero {
-    color: white;
-    height: 90vh;
+  color: white;
+  height: 90vh;
 }
 
 button {
-     background-color: #DA8DC3;
-     color: white;
-     font-family: "Poppins", sans-serif;
-     font-size: 1.2rem;
- border: #edf2f4;
- border-radius: 5%;
- width: 150px;
- height: 70px;
- cursor: pointer;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 28px;
+  background-color: transparent;
+  border-width: 3px;
+  border-color: #da8dc3;
+  width: 151px;
+  height: 50px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #da8dc3;
 }
 
 nav {
@@ -194,9 +200,9 @@ span {
   }
 
   section.hero {
-        height: auto;
-        width: 40%;
-        margin-bottom: 8em;
+    height: auto;
+    width: 40%;
+    margin-bottom: 8em;
   }
   .subhead {
     margin-bottom: 3em;
@@ -204,13 +210,13 @@ span {
 }
 
 @media only screen and (min-width: 1120px) {
-    .hero-img {
-        bottom: 0;
-        top: 0;
-        background-position: 5em;
-        width: 100%;
-        height: auto;
-    }
+  .hero-img {
+    bottom: 0;
+    top: 0;
+    background-position: 5em;
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
