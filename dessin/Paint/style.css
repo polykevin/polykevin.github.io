@@ -185,6 +185,16 @@ input:active{
 #sceau {
   border-color: #2b2d42;
   border: 0px solid #2b2d42;
-
 }
-
+#text {
+  border-color: #2b2d42;
+  border: 0px solid #2b2d42;
+}
+#strokeText {
+  border-color: #2b2d42;
+  border: 0px solid #2b2d42;
+}
+#image {
+  border-color: #2b2d42;
+  border: 0px solid #2b2d42;
+}
