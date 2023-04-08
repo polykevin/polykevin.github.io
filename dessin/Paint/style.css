@@ -53,6 +53,10 @@ body {
   padding: 1rem;
 }
 
+.wow {
+    border-radius: 0%;
+}
+
 #color {
   -webkit-appearance: none;
   -moz-appearance: none;

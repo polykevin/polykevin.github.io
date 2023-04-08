@@ -533,7 +533,7 @@ function text () {
             ctx.fillStyle = color;
             cho = document.getElementById("toiture").value;
             if (cho == 0) {
-                cho == 30;
+                cho = 30;
             }
             ctx.font = cho + "px Arial";
             ctx.textBaseline = 'top';
@@ -554,6 +554,7 @@ function text () {
             input.style.position = 'fixed';
             input.style.left = (e.offsetX - 4) + 'px';
             input.style.top = (e.offsetY + 70) + 'px';
+            input.classList.add("wow");
             input.onkeydown = handleEnter;
 
             document.body.appendChild(input);
@@ -576,7 +577,7 @@ function strokeText() {
             ctx.fillStyle = color;
             cho = document.getElementById("toiture").value;
             if (cho == 0) {
-                cho == 30;
+                cho = 30;
             }
             ctx.font = cho + "px Arial";
             ctx.textBaseline = 'top';
@@ -597,6 +598,7 @@ function strokeText() {
             input.style.position = 'fixed';
             input.style.left = (e.offsetX - 4) + 'px';
             input.style.top = (e.offsetY + 70) + 'px';
+            input.classList.add("wow");
             input.onkeydown = handleEnter;
 
             document.body.appendChild(input);
